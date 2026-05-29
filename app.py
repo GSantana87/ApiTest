@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # --- CONFIGURACIÓN DE PÁGINA Y ESTILO ---
-st.set_page_config(page_title="Reprase it!", page_icon="✍️", layout="centered")
+st.set_page_config(page_title="Rephrase it!", page_icon="✍️", layout="centered")
 
 # Ocultar el ícono de link (anchor) de los títulos
 st.markdown("""

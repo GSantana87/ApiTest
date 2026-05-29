@@ -12,7 +12,7 @@ model = genai.GenerativeModel(
 )
 
 # 3. Build the Interface
-user_phrase = st.text_input("What do you want to rephrase?")
+user_phrase = st.text_area("What do you want to rephrase?", height=150)
 
 # 4. Generate Content ONLY if the user has typed something
 if user_phrase:

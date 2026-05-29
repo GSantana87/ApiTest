@@ -6,7 +6,7 @@ ai_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=ai_key)
 
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+   model_name="models/gemini-1.5-flash",
     system_instruction="You are an expert copywriter. Rephrase the user's text into 3 versions..." 
 )
 

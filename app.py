@@ -16,7 +16,7 @@ ai_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=ai_key)
 
 # --- INTERFAZ MINIMALISTA ---
-st.title("✍️ Reprase it!")
+st.title("✍️ Rephrase it!")
 
 target_language = st.selectbox(
     "Choose your language:", 

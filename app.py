@@ -1,8 +1,15 @@
 import streamlit as st
 import google.generativeai as genai
 
-# --- CONFIGURACIÓN DE PÁGINA ---
+# --- CONFIGURACIÓN DE PÁGINA Y ESTILO ---
 st.set_page_config(page_title="Reprase it!", page_icon="✍️", layout="centered")
+
+# Ocultar el ícono de link (anchor) de los títulos
+st.markdown("""
+    <style>
+    .stApp .header-anchor {display: none;}
+    </style>
+    """, unsafe_allow_html=True)
 
 # --- CONFIGURACIÓN DE IA ---
 ai_key = st.secrets["GEMINI_API_KEY"]

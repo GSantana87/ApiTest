@@ -5,9 +5,9 @@ import google.generativeai as genai
 ai_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=ai_key)
 
-# 2. Setup the model (Updated with the "models/" prefix)
+# 2. Setup the model (Upgraded to the active 2.5 version)
 model = genai.GenerativeModel(
-    model_name="models/gemini-1.5-flash",
+    model_name="gemini-2.5-flash",
     system_instruction="You are an expert copywriter and editor. Rephrase the user's text into 3 versions: 1. Professional, 2. Casual, 3. Concise." 
 )
 

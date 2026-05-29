@@ -12,6 +12,7 @@ model = genai.GenerativeModel(
 
 user_phrase = st.text_input("What do you want to rephrase?")
 
+# Esto evita que se envíe texto vacío a Google al cargar la página
 if user_phrase:
     with st.spinner("Rephrasing..."):
         response = model.generate_content(user_phrase)

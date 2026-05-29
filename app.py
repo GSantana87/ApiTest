@@ -14,8 +14,9 @@ model = genai.GenerativeModel(
 # 3. Build the Interface
 user_phrase = st.text_area("What do you want to rephrase?", height=150)
 
-# 4. Generate Content ONLY if the user has typed something
-if user_phrase:
-    with st.spinner("Rephrasing..."):
-        response = model.generate_content(user_phrase)
-        st.write(response.text)
+# 4. Create the button and trigger the AI
+if st.button("Rephrase Text"):
+    if user_phrase:
+        with st.spinner("Rephrasing..."):
+            response = model.generate_content(user_phrase)
+            st.write(response.text)
